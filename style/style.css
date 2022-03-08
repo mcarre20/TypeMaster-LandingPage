@@ -1,0 +1,422 @@
+*,*::before,*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Coloors*/
+    --dorange: hsla(22,88%,52%);
+    --lorange: hsla(22,89%,52%);
+    --dblue: hsla(220,51%,17%);
+    --lblue: hsla(220,23%,58%);
+    --vlblue:hsla(198,28%,93%);
+    --white:hsla(0,0%,100%);
+
+    /*typography*/
+    --fontxlarge: 3.5rem;
+    --fontlarge: 3rem;
+    --fontmedium: 2rem;
+    --fontsmall: 1rem;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+h1{
+    color: var(--dblue);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+p{
+    color: var(--lblue);
+    font-size: var(--fontsmall);
+    line-height: 26px;
+    font-weight: 500;
+}
+img{
+    display: block;
+}
+
+.button{
+    width: 9.375rem;
+    height: 3rem;
+    text-align: center;
+    padding-top: 0.688rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-size: var(--fontsmall);
+}
+.pagecontainer{
+    max-width: 23.438rem;
+    overflow: hidden;
+}
+/*header*/
+header{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__preorder{
+    background-color: var(--vlblue);
+    color: var(--dblue);
+}
+.logo{
+    width: 40px;
+    height: 40px;
+}
+/*intro*/
+.intro{
+    padding: 0rem 1.5rem;
+    margin-top: 2.5rem;
+}
+.intro__body{
+    padding-right: 1.5rem;
+}
+.intro__title{
+    font-size: var(--fontlarge);
+}
+.intro__body{
+   margin-top: 2rem; 
+}
+.intro__preorder,.intro__release{
+    display: inline-block;
+}
+.intro__preorder{
+    color: var(--white);
+    background-color: var(--dorange);
+    margin-top: 2rem;
+}
+.intro__release{
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+.intro__img{
+    background-image: url(/assets/mobile/image-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 1.25rem;
+    min-width:372px;
+    min-height: 331px;
+    margin-top: 4rem;
+}
+.intro__box{
+    display: none;
+}
+/*description*/
+.descrip{
+    margin-top: 1.5rem;
+}
+.descrip__box{
+    display: none;
+}
+.descrip__img1, .descrip__img2{
+    display: inline-block;
+    min-height: 193px;
+}
+.descrip__img1{
+    background-image: url(/assets/mobile/image-phone-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 0px 20px 20px 0px;
+    min-width: 107px;
+    mix-blend-mode: multiply;
+    
+}
+.descrip__img1overlay{
+    min-width: 100%;
+    min-height: inherit;
+    background-color: hsla(22,89%,52%,0.75);
+    border-radius: 0px 20px 20px 0px;
+}
+.descrip__img2{
+    background-image: url(/assets/mobile/image-glass-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 20px;
+    min-width: 220px;
+    margin-left: 1.5rem;
+}
+.descrip__main{
+    text-align: center;
+}
+.descrip__title{
+    margin-top: 4.688rem;
+    line-height: 2.25rem;
+    font-size: var(--fontmedium);
+}
+.descrip__body{
+    margin: 1.5rem 1.5rem 0rem 1.5rem;
+}
+
+/*feature*/
+.features{
+    margin-top: 2.938rem;
+    padding: 0rem 1.5rem;
+    text-align: center;
+}
+.comp, .bt, .battery, .rgb{
+    display:grid;
+    grid-template-rows: repeat(3,auto);
+    justify-items: center;
+    align-items: center;
+}
+.icon{
+    width: 4.063rem;
+    height: 4.063rem;
+    background-color: var(--dorange);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon img{
+    display: block;
+}
+.features h1{
+    margin-top: 3rem;
+}
+.features p{
+    margin-top: 1.5rem;
+}
+
+/*footer*/
+footer{
+    margin-top: 6rem;
+    margin-bottom: 3.125rem;
+    font-size: 16px;
+    color: var(--lblue);
+    text-align: center;
+}
+/*
+Tablet
+*/
+@media screen and (min-width:48rem){
+    .pagecontainer{
+        max-width: 48rem;
+    }
+    /*header*/
+    header{
+        padding: 2.5rem;
+    }
+    /*intro*/
+    .intro{
+        display: grid;
+        grid-template-columns: [first] 21.45rem [line2] 27.3rem;
+        margin-top: 1.375rem;
+        column-gap: 4rem;
+        padding: 0rem 2.438rem;
+    }
+    .intro__main{
+        padding-right: 0rem;
+        align-self: center;
+        overflow: hidden;
+    }
+    .intro__img{
+        background-image: url(/assets/tablet/image-keyboard.jpg);
+        background-color: var(--vlblue);
+        width:321px;
+        height: 425px;
+        margin-top: 0rem;
+        margin-right: 4rem;
+    }
+    /*description*/
+    .descrip{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+        column-gap: 1.875rem;
+        row-gap: 4.5rem;
+        padding: 0rem 2.5rem;
+    }
+    .descrip__img1, .descrip__img2{
+        display: inline-block;
+        min-height: 320px;
+    }
+    .descrip__img1{
+        background-image: url(/assets/tablet/image-phone-and-keyboard.jpg);
+        min-width: 214px;
+        border-radius: 20px;
+
+    }
+
+    .descrip__img2{
+        background-image: url(/assets/tablet/image-glass-and-keyboard.jpg);
+        min-width: 445px;
+        margin-left: 0rem;
+    }
+    .descrip__img1overlay{
+        border-radius: 20px;
+    }
+    .descrip__title, .descrip__body{
+        display: inline-block;
+        margin: 0rem;
+    }
+    .descrip__main{
+        grid-column: 1/span 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;  
+    }
+    .descrip__body{
+        max-width: 24.875rem;
+    }
+
+    /*feature*/
+    .features{
+        margin-top: 8.875rem;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2,auto);
+        gap: 4.5rem 3.875rem;
+        text-align: left;
+        padding-left: 2.5rem;
+    }
+    .comp, .bt, .battery, .rgb{
+        display:grid;
+        grid-template-rows: repeat(3,auto);
+        justify-items: start;
+        align-items: start;
+    }
+    footer{
+        margin-top: 8.875rem;
+        margin-bottom: 2.688rem;
+        font-size: 16px;
+        color: var(--lblue);
+        left: 50%;
+    }
+}
+/*
+Desktop
+*/
+@media screen and (min-width:90rem){
+    .pagecontainer{
+        max-width: 105rem;
+    }
+
+    .button{
+        width: 10.938rem;
+        height: 3.625rem;
+        padding-top: 1rem;
+    }
+    /*header*/
+    header{
+        max-width: 69.375rem;
+        padding: 3.438rem 0rem;
+        margin: auto;
+    }
+    .header__preorder:hover{
+        background-color: var(--dblue);
+        color: var(--white);
+    }
+    /*intro*/
+    .intro{
+        display: grid;
+        grid-template-columns: 27.813rem auto 15.938rem;
+        padding: 0rem;
+        margin-left: 17.8rem;
+        gap: 1.875rem;
+    }
+    .intro__img{
+        background-image: url(/assets/desktop/image-keyboard.jpg);
+        width:540px;
+        min-height: 480px;
+        margin: 0rem 0rem 0rem 5.98rem;
+    }
+    .intro__box{
+        display:block;
+        width: 100%;
+        height: 15rem;
+        background-color: hsla(199, 29%, 93%);
+        border-radius: 1.25rem;
+    }
+    .intro__preorder:hover{
+        background-color: hsla(22, 100%, 69%);
+    }
+    .intro__body{
+        font-size: 1.125rem;
+    }
+
+    /*description*/
+    
+    .descrip{
+        display: grid;
+        grid-template-columns: 15.938rem 15.938rem 27.813rem 23.75rem ;
+        grid-template-rows: 1;
+        row-gap: 0rem;
+        padding: 0rem;
+        overflow: hidden;
+        margin-right:17.8rem;;
+    }
+    .descrip__box{
+        display: block;
+        width: 15.938rem;
+        height: 15rem;
+        background-color: hsla(199, 29%, 93%);
+        border-radius: 1.25rem;
+        align-self: end;
+    }
+    .descrip__img1, .descrip__img2{
+        display: inline-block;
+        min-height: 480px;
+    }
+    .descrip__img1{
+        background-image: url(/assets/desktop/image-phone-and-keyboard.jpg);
+        min-width: 255px;
+        border-radius: 20px;
+
+    }
+    .descrip__img2{
+        background-image: url(/assets/desktop/image-glass-and-keyboard.jpg);
+        min-width: 445px;
+    }
+    .descrip__main{
+        align-self: center;
+        grid-column: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        margin-left: 5.938rem;  
+    }
+    .descrip__body{
+        margin-top: 1.688rem;
+        max-width: 16rem ;
+    }
+    
+    .features{
+        margin: 10.5rem 17.8rem 0rem;
+        display: grid;
+        grid-template-columns: repeat(4, 15.938rem);
+        gap: 1.875rem;
+        text-align: left;
+        padding: 0rem;
+    }
+    .comp, .bt, .battery, .rgb{
+        display:grid;
+        grid-template-rows: repeat(3,auto);
+        justify-items: start;
+        align-items: start;
+    }
+    
+    footer{
+        margin-top: 8.875rem;
+        margin-bottom: 2.688rem;
+        font-size: 16px;
+        color: var(--lblue);
+        left: 50%;
+    }
+      
+}
