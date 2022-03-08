@@ -101,7 +101,7 @@ header{
     margin-left: 2rem;
 }
 .intro__img{
-    background-image: url(/assets/mobile/image-keyboard.jpg);
+    background-image: url(../assets/mobile/image-keyboard.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     border-radius: 1.25rem;
@@ -124,7 +124,7 @@ header{
     min-height: 193px;
 }
 .descrip__img1{
-    background-image: url(/assets/mobile/image-phone-and-keyboard.jpg);
+    background-image: url(../assets/mobile/image-phone-and-keyboard.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 0px 20px 20px 0px;
@@ -139,7 +139,7 @@ header{
     border-radius: 0px 20px 20px 0px;
 }
 .descrip__img2{
-    background-image: url(/assets/mobile/image-glass-and-keyboard.jpg);
+    background-image: url(../assets/mobile/image-glass-and-keyboard.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 20px;
@@ -223,7 +223,7 @@ Tablet
         overflow: hidden;
     }
     .intro__img{
-        background-image: url(/assets/tablet/image-keyboard.jpg);
+        background-image: url(../assets/tablet/image-keyboard.jpg);
         background-color: var(--vlblue);
         width:321px;
         height: 425px;
@@ -244,14 +244,14 @@ Tablet
         min-height: 320px;
     }
     .descrip__img1{
-        background-image: url(/assets/tablet/image-phone-and-keyboard.jpg);
+        background-image: url(../assets/tablet/image-phone-and-keyboard.jpg);
         min-width: 214px;
         border-radius: 20px;
 
     }
 
     .descrip__img2{
-        background-image: url(/assets/tablet/image-glass-and-keyboard.jpg);
+        background-image: url(../assets/tablet/image-glass-and-keyboard.jpg);
         min-width: 445px;
         margin-left: 0rem;
     }
@@ -329,7 +329,7 @@ Desktop
         gap: 1.875rem;
     }
     .intro__img{
-        background-image: url(/assets/desktop/image-keyboard.jpg);
+        background-image: url(../assets/desktop/image-keyboard.jpg);
         width:540px;
         min-height: 480px;
         margin: 0rem 0rem 0rem 5.98rem;
@@ -372,13 +372,13 @@ Desktop
         min-height: 480px;
     }
     .descrip__img1{
-        background-image: url(/assets/desktop/image-phone-and-keyboard.jpg);
+        background-image: url(../assets/desktop/image-phone-and-keyboard.jpg);
         min-width: 255px;
         border-radius: 20px;
 
     }
     .descrip__img2{
-        background-image: url(/assets/desktop/image-glass-and-keyboard.jpg);
+        background-image: url(../assets/desktop/image-glass-and-keyboard.jpg);
         min-width: 445px;
     }
     .descrip__main{
